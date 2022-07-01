@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Booking_layout">#F5E6E6E2</color>
+    <color name="Booking_layout_corner">@color/black</color>
+
+
+    <color name="Booking_seat_area_off">#F5E6E6E2</color>
+    <color name="Booking_seat_area_on">#7d2ae8</color>
+    <color name="Booking_seat_area_corner_on">@color/black</color>
+    <color name="Booking_seat_area_corner_off">@color/Booking_seat_area_off</color>
+    <color name="Booking_text_seat_area_off">@color/black</color>
+    <color name="Booking_text_seat_area_on">@color/white</color>
+    <color name="Booking_text_seat_off">#090808</color>
+    <color name="Booking_text_seat_on">#090808</color>
+
+    <color name="Booking_cancel">#FD8F8F</color>
+    <color name="Booking_cancel_pressed">#D52A2A</color>
+    <color name="Booking_cancel_icon">@color/black</color>
+
+
+</resources>

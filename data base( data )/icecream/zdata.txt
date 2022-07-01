@@ -1,0 +1,22 @@
+number    name                     details                                                  
+1            Ice Cream Cone       Sweet, creamy vanilla soft serve in a crispy cone.          
+
+2         Caramel Sundae        Cool and creamy vanilla soft serve meets rich and buttery caramel. 
+
+3      Strawberry Sundae        Sweet, tart and oh so creamy. STRAWBERRY SUNDAE. Creamy vanilla soft serve topped with a sweet strawberry sauce.
+
+
+4-  Chocolate Fudge Sundae       Vanilla soft serve, smothered in chocolaty fudge sauce.
+
+
+5- Oreo McFlurry®               Vanilla soft serve with OREO® Cookies mixed in.
+
+
+
+
+
+
+
+
+
+

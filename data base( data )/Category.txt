@@ -1,0 +1,10 @@
+1-OFFers         *
+2-SANDWICHES    *
+3-JAW-BREAKERS  *
+4-PASTA, PIZZA  *
+5-APPETIZERS   *
+6-iceCream     *
+7-BEVERAGES
+
+https://www.mcdonalds.eg/eat/menu/item/ice-cream-cone
+

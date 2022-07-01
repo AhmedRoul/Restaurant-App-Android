@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Booking_table"
+    app:circularflow_defaultRadius="10dp"
+    tools:context=".bookingtable.BookingTable"
+    android:background="@drawable/chairs">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/linearlayout_booking"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+
+
+            <TextView
+                android:id="@+id/textView_Seat_Areas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/almendra"
+                android:text="Seat Area"
+                android:textAlignment="center"
+                android:textColor="#101010"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+                <RadioGroup
+                   android:paddingTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/inside_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/seat_area_selector"
+                        android:button="@null"
+                        app:buttonCompat="@null"
+                        android:checked="false"
+                        android:fontFamily="@font/alike_angular"
+                        android:scaleX=".9"
+                        android:text="Inside"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/outside_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/seat_area_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:fontFamily="@font/alike_angular"
+                        android:scaleX=".9"
+                        android:text="Outside"
+                        android:textAlignment="center"
+                        app:buttonCompat="@null"
+                        android:textSize="18sp"/>
+                </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/artifika"
+                android:paddingTop="20dp"
+                android:text="Number chair"
+                android:textAlignment="center"
+                android:textColor="#101010"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/recyclerview_number_chair">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Spinner
+                android:id="@+id/special_area_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="8dp"
+                android:popupBackground="#F5E6E6E2"
+                android:scrollbars="none"
+                android:spinnerMode="dropdown"
+                android:theme="@style/spinner_style" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/autour_one"
+                android:paddingTop="20dp"
+
+                android:layout_marginLeft="10dp"
+                android:text="Booking hour(HH:MM)"
+                android:textAlignment="center"
+                android:textColor="#2aa3ef"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_booking_time"
+                android:drawableRight="@drawable/ic_clock"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/amaranth"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="#63000000"
+
+
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="25dp">
+
+                <Button
+                    android:id="@+id/booking_confirm_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_confirm"
+                    android:drawableLeft="@drawable/ic_iconmonstr_check_mark_6"
+                    android:scaleX=".85"
+                    android:text="Confirm"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/booking_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_cancel"
+                    android:drawableRight="@drawable/ic_cancel"
+                    android:scaleX=".85"
+                    android:text="Cancel"
+                    app:backgroundTint="@null"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

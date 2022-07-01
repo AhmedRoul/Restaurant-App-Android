@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/layout_alertdialog_food"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/name_dialog_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        />
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_centerInParent="true"
+        >
+
+
+        <TextView
+            android:id="@+id/price_integer_dialog_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_bold"
+            android:text="50"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/price_float_dialog_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_bold"
+            android:scaleX=".7"
+            android:scaleY=".7"
+            android:text=".00"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/current_template_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_bold"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            android:text="EGP"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+      </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:background="@drawable/shape_alertdialog_number_food">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minus_dialog_food"
+                app:srcCompat="@drawable/ic_minus"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/selector_alertdialog_min_plus"
+
+                />
+            <TextView
+                android:id="@+id/number_dialog_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#271F98"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/plus_dialog_food"
+                app:srcCompat="@drawable/ic_plus"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/selector_alertdialog_min_plus"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/add_cart_dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_confirm"
+            android:drawableRight="@drawable/ic_shopping_cart"
+            android:scaleX=".85"
+            android:text="Add Cart"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/cancel_dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_cancel"
+            android:drawableRight="@drawable/ic_cancel"
+            android:scaleX=".85"
+            android:text="Cancel"
+            app:backgroundTint="@null"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

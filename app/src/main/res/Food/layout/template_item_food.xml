@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item_food"
+    android:clickable="true"
+    android:layout_marginBottom="15dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginLeft="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/shape_item_food_price"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/price_integer_template_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rubik_bold"
+                    android:text="50"
+                    android:textColor="#feda5e" />
+
+                <TextView
+                    android:id="@+id/price_float_template_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rubik_bold"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:text=".00"
+                    android:textColor="#feda5e"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/current_template_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/rubik_bold"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:text="EGP"
+                    android:textAllCaps="true"
+                    android:textColor="#feda5e"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingbar_template_food"
+                style="?android:attr/ratingBarStyleSmall"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+                android:rating="4"
+                android:numStars="4"
+
+                />
+
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView_template_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/chairs"
+            android:adjustViewBounds="true"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:paddingRight="25dp"
+            android:paddingStart="25dp"
+            android:paddingBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/name_template_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/carter_one"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/shopping_cart_template_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+                android:text="Button"
+                app:srcCompat="@drawable/ic_shopping_cart"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/selector_icon_shopping_cart"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
